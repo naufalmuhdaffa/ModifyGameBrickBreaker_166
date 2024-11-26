@@ -142,9 +142,9 @@ class Game(tk.Frame):
 
     def on_key_press(self, event):
         if event.keysym == 'Left':
-            self.paddle.move_left()
+            self.paddle.move(-20)
         elif event.keysym == 'Right':
-            self.paddle.move_right()
+            self.paddle.move(20)
 
     def on_mouse_move(self, event):
         self.paddle.move(event.x)
